@@ -7,7 +7,7 @@ import Header from './components/Header'
 import SearchResult from './components/SearchResult'
 import Feed from './components/Feed'
 import ChannelDetail from './components/ChannelDetail'
-import VideoDetailsContainer from './components/VideoDetails/VideoDetailsContainer'
+import VideoDetailsContainer from './components/VideoDetailsContainer'
 
 function App() {
   return (

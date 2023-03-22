@@ -19,7 +19,7 @@ function VideoDetails(){
     }
     
     useEffect(() => {
-        // getData()
+        getData()
       }, [id])
     
     return(
