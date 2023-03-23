@@ -25,7 +25,7 @@ function VideoCommentDetails(){
   return(
     <div className="comment-card-container">
     <h3>Comments:</h3>
-    {comment.map((currEle, index) => {
+    {comment?.map((currEle, index) => {
       const { snippet } = currEle
       let date = new Date(snippet?.topLevelComment?.snippet?.publishedAt)
 
