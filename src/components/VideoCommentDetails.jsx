@@ -20,7 +20,7 @@ function VideoCommentDetails(){
   }
 
   useEffect(() => {
-    // getCommentData()
+    getCommentData()
   }, [id])
 
   return(
