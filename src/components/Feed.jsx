@@ -30,7 +30,7 @@ function Feed() {
           const { snippet,id } = currEle
           let date  = new Date(snippet?.publishedAt)
             return (
-              <Link to={`/video/${id?.videoId}`}>
+              <Link to={`/video/${id?.videoId}`} key={index}>
                 <div key={index} className='feed-container-card'>
                  <img src={snippet?.thumbnails?.high?.url} alt="" width='300px' />
                 <h3>{snippet?.title}</h3> 

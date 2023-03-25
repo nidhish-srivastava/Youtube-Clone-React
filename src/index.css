@@ -310,10 +310,23 @@ a {
   }
 
 
+  .comment-card-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: red;
+  }
   .commentCard{
     display: flex;
-    width: auto;
+    width: auto;   /*This fits the comment inside the container*/
     gap: 1rem;
+  }
+  .commentCard .c{
+    background-color: blue;
+    /* These lines are for prevent the overflow of the text from the container */
+    word-wrap: break-word;
+    white-space: pre-wrap;
+word-break: break-word;
   }
 
   .suggested-video-container{

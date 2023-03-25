@@ -5,7 +5,6 @@ function ChannelDetail() {
 
   const { id } = useParams()
   const [channelDetails, setChannelDetails] = useState([])
-  const [playlistDetails,setPlayListDetails] = useState([])
 
   const getData = async () => {
     const response = await axios.get(`https://youtube-v31.p.rapidapi.com/channels?part=snippet,statistics&id=${id}`, {
@@ -30,7 +29,7 @@ function ChannelDetail() {
   return (
     <React.Fragment>
       <div>
-        {channelDetails.map((currEle, index) => {
+        {channelDetails?.map((currEle, index) => {
           const { snippet , statistics} = currEle
           return (
             <div key={index} className='channel-container'>
