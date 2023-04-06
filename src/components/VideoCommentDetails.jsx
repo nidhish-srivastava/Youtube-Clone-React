@@ -14,7 +14,7 @@ function VideoCommentDetails(){
         'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
       }
     })
-    console.log("VideoCommentDetails",response.data.items)
+    // console.log("VideoCommentDetails",response.data.items)
     setComment(response.data.items)
     setCommentMainDetails(response.data)
   }
@@ -30,7 +30,7 @@ function VideoCommentDetails(){
       const { snippet } = currEle
       let date = new Date(snippet?.topLevelComment?.snippet?.publishedAt)
       let comment = snippet?.topLevelComment?.snippet?.authorChannelId?.value
-      console.log(comment)
+      // console.log(comment)
       return (
         <div className="commentCard" key={index}>
          <Link to={`/channel/${comment}`}>

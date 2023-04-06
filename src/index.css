@@ -335,10 +335,23 @@ word-break: break-word;
     gap: 1rem;
     /* background-color: blue; */
   }
+}
 
- 
+/* Channel Video CSS */
 
+.channel-video-container{
+  padding: 2rem;
+  display: grid;
+  /* background-color: green; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
-
-
+.channel-detail-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  list-style: none;
+  gap: 2rem;
+  padding: 0.7rem 0 0 0;
 }

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
+import ChannelVideos from './ChannelVideos'
 function ChannelDetail() {
 
   const { id } = useParams()
   const [channelDetails, setChannelDetails] = useState([])
-
   const getData = async () => {
     const response = await axios.get(`https://youtube-v31.p.rapidapi.com/channels?part=snippet,statistics&id=${id}`, {
       headers: {
@@ -13,7 +13,7 @@ function ChannelDetail() {
         'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
       }
     })
-    console.log("Channel Details",response.data.items)
+    // console.log("Channel Details",response.data.items)
     setChannelDetails(response.data.items)
   }
 
@@ -22,9 +22,6 @@ function ChannelDetail() {
   useEffect(() => {
     getData()
   }, [])
-
- 
-
 
   return (
     <React.Fragment>
@@ -45,9 +42,9 @@ function ChannelDetail() {
               </div>
              )
         })}
-
-
       </div>
+
+     <ChannelVideos/>
     </React.Fragment>
 
   )
