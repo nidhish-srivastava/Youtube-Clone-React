@@ -29,7 +29,7 @@ function ChannelDetail() {
         {channelDetails?.map((currEle, index) => {
           const { snippet , statistics} = currEle
           return (
-            <div key={index} className='channel-container'>
+            <div key={index} className='channel-container-card'>
               <div className="left">
                 <img src={snippet.thumbnails.medium.url} alt="" className='channelImg' />
                 <h2>{snippet?.title}</h2>

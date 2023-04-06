@@ -25,7 +25,7 @@ const ChannelVideos = () => {
 
 
     useEffect(() => {
-        getChannelVideos()
+        // getChannelVideos()
     }, [])
 
     return (
