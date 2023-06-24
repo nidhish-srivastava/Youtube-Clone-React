@@ -5,6 +5,7 @@
 * Click on the video to get Video Info 
 * Comments of that video(100 recent ones only)
 * Get suggested videos(50 only)
+* Get channel videos when clicked on a channel
 
 API docs link : https://rapidapi.com/ytdlfree/api/youtube-v31/
 
@@ -16,4 +17,4 @@ Tech used :
 
 * axios library for making api calls, React Router DOM for routing with useParams hook for dynamic routing
 
-* EndPoints of the API used are : Suggested Videos,Search,Video Details,Video Comments,Channel Details
+* EndPoints of the API used are : Suggested Videos,Search,Video Details,Video Comments,Channel Details,Channel Videos
